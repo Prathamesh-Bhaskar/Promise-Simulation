@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Promise Simulation</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div id="app">
+        <h1>JavaScript Promises Simulation</h1>
+
+        <button id="addTaskBtn">Add Task</button>
+
+        <div id="taskQueue"></div>
+
+        <div id="logContainer">
+            <h2>Backend Log</h2>
+            <ul id="logList"></ul>
+        </div>
+
+        <div id="comparisonSection">
+            <h2>Backend Logic of Promises</h2>
+
+            <div id="promiseLifecycle">
+                <h3>Promise Lifecycle Visualization</h3>
+                <div id="promiseState">
+                    <div class="state" id="pendingState">Pending</div>
+                    <div class="state" id="fulfilledState">Fulfilled</div>
+                    <div class="state" id="rejectedState">Rejected</div>
+                </div>
+                <div id="promiseTransition">
+                    <h4>Promise Transitions:</h4>
+                    <pre><code id="transitionLog"></code></pre>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
